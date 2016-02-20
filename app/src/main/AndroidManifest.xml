@@ -1,15 +1,17 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-		  xmlns:tools="http://schemas.android.com/tools"
-		  package="de.androidbytes.recipr.app"
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	package="de.androidbytes.recipr.app"
 	>
 	
 	<application
 		android:allowBackup="true"
 		android:fullBackupContent="true"
-		android:name=".Recipr"
+		android:name=".ReciprApplication"
 		android:label="@string/app_name"
 		android:icon="@mipmap/ic_launcher"
-		tools:ignore="UnusedAttribute" >
+		tools:ignore="UnusedAttribute"
+		>
 	
 	</application>
 
