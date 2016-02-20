@@ -1,8 +1,19 @@
-apply plugin: 'com.android.application'
+buildscript {
+    repositories {
+        jcenter()
+    }
 
-repositories {
-    jcenter()
+    dependencies {
+//        Android Gradle Plugin
+        classpath 'com.android.tools.build:gradle:1.5.0'
+
+//        Android APT Plugin
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
 }
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
 
 android {
     compileSdkVersion 23
@@ -32,6 +43,13 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:support-annotations:23.1.1'
     compile 'com.android.support:design:23.1.1'
+
+//    Dagger
+    compile 'com.google.dagger:dagger:2.0.2'
+    apt 'com.google.dagger:dagger-compiler:2.0.2'
+
+//    JSR250 Annotation (@Generated)
+    provided 'javax.annotation:jsr250-api:1.0'
 
 //    Logger
     compile 'co.trikita:log:1.1.5'
