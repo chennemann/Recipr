@@ -24,6 +24,21 @@ android {
 }
 
 dependencies {
+
+//    Local Libraries
     compile fileTree(dir: 'libs', include: ['*.jar'])
+
+//    Android Support
     compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:support-annotations:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+
+//    Logger
+    compile 'co.trikita:log:1.1.5'
+
+//    MVP
+    compile 'nz.bradcampbell.compartment:compartment:0.0.4'
+
+//    View Binding
+    compile 'com.jakewharton:butterknife:7.0.1'
 }
