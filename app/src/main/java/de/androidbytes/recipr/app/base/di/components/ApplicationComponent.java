@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.androidbytes.recipr.app.di.components;
+package de.androidbytes.recipr.app.base.di.components;
 
 import dagger.Component;
-import de.androidbytes.recipr.app.di.modules.ApplicationModule;
+import de.androidbytes.recipr.app.base.di.modules.ApplicationModule;
 
 import javax.inject.Singleton;
 

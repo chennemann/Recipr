@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.androidbytes.recipr.app.di.modules;
+package de.androidbytes.recipr.app.base.di.modules;
 
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;

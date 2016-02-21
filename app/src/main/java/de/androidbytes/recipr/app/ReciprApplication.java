@@ -18,9 +18,9 @@ package de.androidbytes.recipr.app;
 import android.app.Application;
 import android.content.Context;
 
-import de.androidbytes.recipr.app.di.components.ApplicationComponent;
-import de.androidbytes.recipr.app.di.components.DaggerApplicationComponent;
-import de.androidbytes.recipr.app.di.modules.ApplicationModule;
+import de.androidbytes.recipr.app.base.di.components.ApplicationComponent;
+import de.androidbytes.recipr.app.base.di.components.DaggerApplicationComponent;
+import de.androidbytes.recipr.app.base.di.modules.ApplicationModule;
 
 /**
  * Custom implementation of the {@link Application} class to expose the
@@ -57,6 +57,16 @@ public class ReciprApplication extends Application {
                     .build();
         }
         return reciprApplication.component;
+    }
+
+    /**
+     * Reset the {@link ApplicationComponent} assigned to the current {@link ReciprApplication} instance.
+     * @param context {@link Context} used to retrieve the current {@link Application}
+     *                object.
+     */
+    public static void clearAppComponent(Context context) {
+        ReciprApplication reciprApplication = ((ReciprApplication) context.getApplicationContext());
+        reciprApplication.component = null;
     }
 
 }
