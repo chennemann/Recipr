@@ -12,7 +12,13 @@
 		android:icon="@mipmap/ic_launcher"
 		tools:ignore="UnusedAttribute"
 		>
-	
+
+		<provider
+			android:name="de.androidbytes.recipr.app.data.provider.ReciprProvider"
+			android:authorities="de.androidbytes.recipr.app.data.provider"
+			android:exported="false" />
+
+
 	</application>
 
 </manifest>
