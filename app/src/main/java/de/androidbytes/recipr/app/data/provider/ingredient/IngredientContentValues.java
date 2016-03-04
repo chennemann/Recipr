@@ -1,13 +1,9 @@
 package de.androidbytes.recipr.app.data.provider.ingredient;
 
-import java.util.Date;
-
-import android.content.Context;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.net.Uri;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-
 import de.androidbytes.recipr.app.data.provider.base.AbstractContentValues;
 
 /**
@@ -32,7 +28,7 @@ public class IngredientContentValues extends AbstractContentValues {
     /**
      * Update row(s) using the values stored by this object and the given selection.
      *
-     * @param contentResolver The content resolver to use.
+     * @param context The context used to retrieve the content resolver to use.
      * @param where The selection to use (can be {@code null}).
      */
     public int update(Context context, @Nullable IngredientSelection where) {

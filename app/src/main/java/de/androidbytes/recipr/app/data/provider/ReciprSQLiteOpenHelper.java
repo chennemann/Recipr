@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Build;
 import android.util.Log;
 
-import de.androidbytes.recipr.app.data.BuildConfig;
+import de.androidbytes.recipr.app.BuildConfig;
 import de.androidbytes.recipr.app.data.provider.ingredient.IngredientColumns;
 import de.androidbytes.recipr.app.data.provider.recipe.RecipeColumns;
 import de.androidbytes.recipr.app.data.provider.step.StepColumns;

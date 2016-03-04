@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 import android.util.Log;
 
-import de.androidbytes.recipr.app.data.BuildConfig;
+import de.androidbytes.recipr.app.BuildConfig;
 
 /**
  * Implement your custom database creation or upgrade code here.

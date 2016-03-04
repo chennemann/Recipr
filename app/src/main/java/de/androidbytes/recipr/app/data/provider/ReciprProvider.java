@@ -1,21 +1,19 @@
 package de.androidbytes.recipr.app.data.provider;
 
-import java.util.Arrays;
-
 import android.content.ContentValues;
 import android.content.UriMatcher;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.net.Uri;
-import android.support.annotation.NonNull;
 import android.util.Log;
-
-import de.androidbytes.recipr.app.data.BuildConfig;
+import de.androidbytes.recipr.app.BuildConfig;
 import de.androidbytes.recipr.app.data.provider.base.BaseContentProvider;
 import de.androidbytes.recipr.app.data.provider.ingredient.IngredientColumns;
 import de.androidbytes.recipr.app.data.provider.recipe.RecipeColumns;
 import de.androidbytes.recipr.app.data.provider.step.StepColumns;
 import de.androidbytes.recipr.app.data.provider.user.UserColumns;
+
+import java.util.Arrays;
 
 public class ReciprProvider extends BaseContentProvider {
     private static final String TAG = ReciprProvider.class.getSimpleName();
